@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="author" content="Franco Bellomo, Lucas Bellomo" />
+    <title>Hackeando en la Ciencia</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+	<script src="reveal.js/lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section>
+	  <img src="img/poster_Bellomo.png"></img>
+	</section>
+
+	<section id="por-qué-hackers">
+	  <h1>¿Por qué Hackers?</h1>
+	  <img src="img/hacker_monocycle.jpg"></img>
+	</section>
+
+	<section>
+	  <section id="r-pi" data-background="img/raspberry_pie.jpg">
+	  </section>
+	  
+	  <section id="r-pi" data-background="img/pie_cross.jpg">
+	  </section>
+	
+	  <section id="historia">
+	    <h2>Historia</h2>
+	    <ul>
+	      <li>80s, PC caras (solo empresas, univ, gobiernos)</li>
+	      <li>1981, BBC patrocina a la empresa Acorn para construir computadoras personales accesibles que se puedan conectar al tele como parte de su proyecto de alfabetización informática dirigido a los niños.</li>
+	      <li>Estas computadoras eran conocidas como BBC Micro.</li>
+	      <li>1982, ZX Spectrum y Commodore Commodore64.</li>
+	      <li>Linus Torvalds afirma haber porgramado en una ZX Sprectrum cuando era chico.</li>
+	      <li>Sin monitor. Se usan con el TV.</li>
+	      <li>Sin almacenamiento. Se usa el pasa-cassette.</li>
+	    </ul>
+	  </section>
+
+	  <section>
+	    <h1 style="padding-top: 15%;">2010, nace R-Pi</h1>
+	    <ul>
+	      <li>Económica.</li>
+	      <li>Computadora básica (sin monitor, periféricos, almacenamiento, etc).</li>
+	    </ul>
+	  </section>
+	  
+	  <section id="nace-rpi" data-background="img/raspberry-pi.png">
+	  </section>
+
+	  <section id="características-técnicas-2b">
+	    <h2><a href="http://www.alliedelec.com/images/products/datasheets/bm/Raspberry%20Pi/70465426.pdf">Características técnicas (2B)</a></h2>
+	    <ul>
+	      <li>A 900MHz quad-core ARM Cortex-A7 CPU</li>
+	      <li>Dual Core VideoCore IV® Multimedia Co-Processor</li>
+	      <li>VideoCore IV 3D graphics core</li>
+	      <li>1GB RAM</li>
+	      <li>40 GPIO pins</li>
+	      <li>4 USB ports, HDMI, Ethernet, 3.5mm audio jack, Micro SD card slot</li>
+	      <li>Camera interface (CSI)</li>
+	      <li>Display interface (DSI)</li>
+	      <li>Power supply: +5V @ 2A via microUSB socket</li>
+	      <li>Calificada para trabajar en -40 y 85ºC</li>
+	      <li>Dimensions: 86 x 56 x 20mm</li>
+	    </ul>
+	  </section>
+	</section>
+
+	<section id="os">
+
+	  <section>
+	    <h1 style="padding-top: 25%;">OS</h1>
+	  </section>
+	    
+	  <section id="de-proposito-general">
+	    <h1>OS</h1>
+	    <h2>De proposito general</h2>
+	    <ul>
+	      <li>Rasbian (Debian)</li>
+	      <li>Pidora (Fedora)</li>
+	      <li>Ubuntu mate</li>
+	      <li>NetBSD</li>
+	      <li>Arch Linux</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/os_generales.png">
+	  </section>
+	  
+	  <section id="centro-multimedias">
+	    <h1>OS</h1>
+	    <h2>Centro Multimedia</h2>
+	    <ul>
+	      <li>OSMC</li>
+	      <li>OPENELEC</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/os_multimedia.png">
+	  </section>
+
+	  <section id="otros">
+	    <h1>OS</h1>
+	    <h2>Otros</h2>
+	    <ul>
+	      <li>PiNet</li>
+	      <li>RISC OS</li>
+	      <li>Snappy Ubuntu Core</li>
+	      <li>W10 for IoT</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/os_otros.png">
+	  </section>
+
+	  <section data-background="img/Blue-screen-Crash-Windows-8.jpg">
+	    <h3 class="fragment">Mencionamos windows, y se tildó :(</h3>
+	  </section>
+	  
+	</section>
+	
+	<section>
+	  <section id="chiches-para-la-r-pi" >
+	    <h1 style="padding-top: 25%;">Accesorios</h1>
+	  </section>
+
+	  <section id="cases" data-background="img/cases.png" data-background-size="100%">
+	  </section>
+
+	  <section id="camara">
+	    <h2 style="padding-top: 10%;"><a href="http://www.alliedelec.com/images/products/datasheets/bm/Raspberry%20Pi/70280250.pdf">Cámara</a></h2>
+	    <ul>
+	      <li>Cámara de alta definición.</li>
+	      <li>Interfaz dedicada CSI.</li>
+	      <li>Resolución 5Mpx.</li>
+	      <li>Posee un lente fijo.</li>
+	      <li>Imágenes de 2592 x 1944, videos de 1080p30 y 720p60.</li>
+	      <li><a href="https://picamera.readthedocs.org">Librería: Python + OpenCV</a></li>
+	    </ul>
+	    <p><a href="http://docs-europe.electrocomponents.com/webdocs/127d/0900766b8127db33.pdf">Pi NoIR</a> (NoIR = No Infrared): - Igual a la otra cámara, pero sin el filtro de infra-rojo.</p>
+	  </section>
+
+	  <section  data-background="img/camera2.jpg">
+	  </section>	
+
+	  <section id="display">
+	    <h2><a href="https://www.raspberrypi.org/products/raspberry-pi-touch-display/">Display</a></h2>
+	    <ul>
+	      <li>Multi-touch capacitive touch screen - supports up to 10 finger touches</li>
+	      <li>7 inch display</li>
+	      <li>800 x 480 pixel resolution at 60 frames per second (fps)</li>
+	      <li>24-bit RGB colour</li>
+	      <li>70° viewing angle</li>
+	      <li>Only two connections required</li>
+	      <li>No electronic interference</li>
+	      <li>Full Raspbian OS functionality without a keyboard and mouse</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/display1.jpg">
+	  </section>
+
+	  <section data-background="img/display2.jpg">
+	  </section>
+
+	  <section data-background="img/display3.jpg">
+	  </section>
+
+	  <section id="compute-module-development-kit">
+	    <h2 style="padding-top: 15%;">
+	      <a href="https://www.raspberrypi.org/products/compute-module-development-kit/">Compute Module Development Kit</a>
+	    </h2>
+	    <p>Esencialmente es una Raspberry-Pi (the BCM2835 processor and 512Mbyte of RAM) con 4Gbyte eMMC Flash, pero todo integrado en una placa de 67x30mm con un conector estandar DDR2 SODIMM y 120 GPIO!</p>
+	  </section>
+
+	  <section data-background="img/computer.jpg">
+	  </section>
+
+	  <section id="sense-hat">
+	    <h2><a href="https://www.raspberrypi.org/products/sense-hat/">Sense hat</a></h2>
+	    <p>Lab kit such as sensors, controllers and data loggers don’t come cheap.</p>
+	    <p class="fragment">A Pi wearing a Sense HAT could do everything from monitoring plant growth to controlling and logging experimental variables.</p>
+	  </section>
+	
+	  <section id="sense-hat-1">
+	    <h2>Sense hat</h2>
+	    <p>The Sense HAT has an 8×8 RGB LED matrix, a five-button joystick and includes the following sensors:</p>
+	    <ul>
+	      <li class="fragment">Gyroscope</li>
+	      <li class="fragment">Accelerometer</li>
+	      <li class="fragment">Magnetometer</li>
+	      <li class="fragment">Temperature</li>
+	      <li class="fragment">Barometric pressure</li>
+	      <li class="fragment">Humidity</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/sense_hat.jpeg">
+	  </section>
+
+	  <section data-background="img/Astro_Pi_Logo_WEB-300px.png">
+	    <h2 style="color: black; padding-top: 100px;" class="fragment">It’s going to the International Space Station in December 2015</h2>
+	  </section>
+	  
+	</section>
+
+	<section>
+	  <section id="your-own-pocker-laboratory">
+	    <h1>Your own pocker laboratory</h1>
+	    <p>Bringing computer back to electronics enthusiasts</p>
+	    <p>Encourage young people to learn computers they were to be learned (like in the late 70s and early 80s)</p>
+	  </section>
+	  
+	  <section id="comunidad" data-background="img/comunidad.png">
+	    <h2 style="color: black;">Comunidad</h2>
+	  </section>
+	  
+	  <section id="barataverde">
+	    <h2>Económica</h2>
+	    <table>
+	      <thead>
+		<tr class="header">
+		  <th style="text-align: left;"></th>
+		  <th style="text-align: left;">PC Escritorio</th>
+		  <th style="text-align: left;">R-Pi</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr class="odd">
+		  <td style="text-align: left;">Mother completo</td>
+		  <td style="text-align: left;">$4000 *</td>
+		  <td style="text-align: left;">$700</td>
+		</tr>
+		<tr class="even">
+		  <td style="text-align: left;">Gabinete y fuente</td>
+		  <td style="text-align: left;">$1000</td>
+		  <td style="text-align: left;">$300</td>
+		</tr>
+		<tr class="odd">
+		  <td style="text-align: left;">Total</td>
+		  <td style="text-align: left;">$5000</td>
+		  <td style="text-align: left;">$1000</td>
+		</tr>
+	      </tbody>
+	    </table>
+	    <p>Mantine el precio en el tiempo, aumentando las prestaciones :)</p>
+
+	    <p style="font-size: 20px; text-align: left;">*Dual core, 2GB de RAM</p>
+	    <p style="font-size: 20px; text-align: left;">Costos aproximados en Argentina</p>
+	  </section>
+	  
+	  <section>
+	    <h2 style="padding-top: 10%;">Ecológica</h2>
+	    <table>
+	      <thead>
+		<tr class="header">
+		  <th style="text-align: left;"></th>
+		  <th style="text-align: left;">PC Escritorio</th>
+		  <th style="text-align: left;">R-pi</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr class="odd">
+		  <td style="text-align: left;">Consumo</td>
+		  <td style="text-align: left;">100-250W</td>
+		  <td style="text-align: left;">10W</td>
+		</tr>
+		<tr class="even">
+		  <td style="text-align: left;">Consumo anual</td>
+		  <td style="text-align: left;">196-490Kw</td>
+		  <td style="text-align: left;">19.6Kw</td>
+		</tr>
+		<tr class="odd">
+		  <td style="text-align: left;">Costo anual</td>
+		  <td style="text-align: left;"></td>
+		  <td style="text-align: left;"></td>
+		</tr>
+	      </tbody>
+	    </table>
+	    <ul>
+	      <li>Consume menos que un tubo fluorecente (18-58w).</li>
+	      <li>Se puede alimentar con pilas AA.</li>
+	    </ul>
+	    <!--
+		cantidad de días laborales 2015: 245
+	      -->
+	  </section>  
+	</section>
+
+	<section>
+	  <section id="uso-educativo" class="slide level1">
+	    <h1 style="padding-top: 25%;">Uso educativo</h1>
+	  </section>
+
+	  <section data-background="img/scratch.png">
+	  </section>
+	  
+	  <section data-background="img/py_rpi_mine.png">
+	  </section>
+	  
+	  <section data-background="img/minecraft-pi-edition.jpg">
+	  </section>
+	  
+	  <section data-background="img/wolfram_init.png">
+	  </section>
+	  
+	  <section data-background="img/wolfram.png">
+	  </section>
+	  
+	  <section id="matematica">
+	    <h1><a href="https://www.raspberrypi.org/blog/mathematica-10/">Matematica</a></h1>
+	    <ul>
+	      <li>Licencia oficial</li>
+	      <li>Remote Development Kit</li>
+	      <li>Acces to GPIO</li>
+	      <li>Connect to all I/O</li>
+	      <li>Se puede publicar</li>
+	    </ul>
+	  </section>
+
+	  <section id="matlab">
+	    <h1><a href="http://hardware.mathworks.com/">Matlab</a></h1>
+	    <ul>
+	      <li>DSP System Toolbox™</li>
+	      <li>Image Processing Toolbox™</li>
+	      <li>Computer Vision System Toolbox™</li>
+	      <li>Simulink
+		<ul>
+		  <li>Connect to Raspberry Pi I/O (audio input/output, video input, display)</li>
+		  <li>GPIO read and write</li>
+	      </ul></li>
+	    </ul>
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h1 style="padding-top: 15%;">Proyectos Interesantes</h1>
+	  </section>
+
+	  <section data-background="img/astro-pi2.png">
+	  </section>
+	  
+	  <section id="astro-pi">
+	    <h1>Astro-Pi</h1>
+	    <ul>
+	      <li>Astronauta británico Tim Peake llevará dos Raspberry Pi con sense hat y cámaras a la International Space Station (ISS)</li>
+	      <li>Un proyecto que da la oportunidad a estudiantes de primaria y secundaria de idear y correr sus propios experimentos/código en el espacio.</li>
+	    </ul>
+	  </section>
+
+	  <section data-background="img/sky.jpeg">
+	  </section>
+	
+	  <section id="skycademy-balloons-everywhere">
+	    <h2 style="padding-top: 10%;">Skycademy – Balloons Everywhere!</h2>
+	    <p>Dave Akerman hooked a Raspberry Pi with a webcam and GPS up to a hydrogen balloon, which got nearly 40km up (39,994m, to be precise) before bursting. This means that Dave’s is the first Raspberry Pi to visit near space (it returned unharmed, and Dave was able to recover it).</p>
+	  </section>
+
+	  <section>
+	    <img src="img/pi_balloon.jpeg"></img>
+	  </section>
+
+	  <section data-background="img/skycademy_track2.png">
+	  </section>
+
+	  <section>
+	    <h2 style="padding-top: 20%;">Raspberry + Cámara + Telescopio</h2>
+	    <h3>Fotografía astronómica</h3>
+	  </section>
+	  
+	  <section data-background="img/raspiPi1.jpg">
+	  </section>
+
+	  <section data-background="img/moon2.jpg">
+	  </section>
+	  
+	  <section id="pinet">
+	    <h1>PiNet</h1>
+	    <img src="img/pinet.jpg"></img>
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h1 style="padding-top: 25%;">Usos</h1>
+	  </section>
+
+	  <section data-background="img/pi2go1.jpg">
+	  </section>
+	  
+	  <section>
+	    <h2>Pi-to-Go</h2>
+	    <p>Ultra portable, mobile Raspberry Pi that you can take to-go.</p>
+	    
+	    <ul>
+	      <li>LCD Screen - bought on amazon for $17.95</li>
+	      <li>Raspberry Pi - bought on Newark/Element14 for $35</li>
+	      <li>Mini Keyboard/Mouse - bought on amazon for $29.95</li>
+	      <li>Standalone Battery Charger- bought on amazon for $75.00</li>
+	      <li>Powered 7 Port USB Hub - bought on Parts-People.com for $14.95</li>
+	      <li>64GB SSD Hard Drive - bought on Parts-People.com for $69.95</li>
+	      <li>Dell D600 Battery - bought on Parts-People.com for $88.50</li>
+	    </ul>
+	  </section>
+	  
+	  <section data-background="img/pi2go2.jpg">
+	  </section>
+	  
+	  <section id="piphone" data-background="img/piphone.jpg">
+	    <h2>PiPhone</h2>
+	  </section>
+
+	  <section id="pipad" data-background="img/PlanePiPad.jpg">
+	    <h1>PiPad</h1>
+	  </section>
+
+	  <section data-background="img/media_center.jpg">
+	    <h1>Centro Multimedia</h1>
+	  </section>
+
+	  <section id="cluster">
+	    <h1>Cluster</h1>
+	    <p>&quot;The RPi platform has to be one of the cheapest ways to create a cluster of 32 nodes. The cost for an RPi with an 8GB SD card is ~$45. For comparison, each node in the Onyx cluster was somewhere between $1,000 and $1,500. So, for near the price of one PC-based node, we can create a 32 node Raspberry Pi cluster!&quot;</p>
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer1.jpg">
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer4.jpg">
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer6.jpg">
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer2.png">
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer3.jpg">
+	  </section>
+
+	  <section data-background="img/raspberry_pi_supercomputer5.jpg">
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h1 style="padding-top: 15%;">¿Qué hacemos nosotros?</h1>
+	  </section>
+
+	  <section data-background="img/cern2.jpg">
+	  </section>
+
+	  <section>
+	    <h1 style="padding-top: 20%;">No, mentira!</h1>
+	  </section>
+
+	  <section>
+	    <h1 style="padding-top: 10%;">Control remoto (web) de temperatura</h1>
+	  </section>
+
+	  <section data-background="img/conexion_tmp.jpeg">
+	  </section>
+
+	  <section data-background="img/plot3.png">
+	  </section>
+	    
+
+	</section>
+	
+	<section id="agradecimiento" class="slide level1">
+	  <h1 style="padding-top: 20%;">Agradecimiento</h1>
+	  <p>Al profesor Dr. Daniel Forcheti por darnos la oportunidad de trabajar en proyectos con la Raspberry Pi</p>
+	</section>
+
+	<section>
+	  <h1 style="padding-top: 5%;">Ninguna R-Pi ha sido dañada en el proceso de esta presentación</h1>
+	</section>
+
+	<section>
+	  <h1 style="padding-top: 15%;">Muchas Gracias!</h1>
+	  <h2>¿Preguntas?</h2>
+
+	  <p>Lucas Bellomo 
+	    <a href="https://twitter.com/ucaomo" target="_blank">
+	      @ucaomo
+	    </a>
+	  </p>
+	  
+	  <p>Franco Bellomo <a href="https://twitter.com/fnbellomo" target="_blank">@fnbellomo</a></p>
+	</section>
+
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,         // Display controls in the bottom right corner
+      progress: true,         // Display a presentation progress bar
+      history: true,          // Push each slide change to the browser history
+      center: false,                       // Vertical centering of slides
+      maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+      slideNumber: false,                // Display the page number of the current slide
+      theme: 'moon', // available themes are in /css/theme
+      transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      //          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+      //          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]});
+    </script>
+  </body>
+</html>
